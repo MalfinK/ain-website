@@ -1,0 +1,493 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #6a89cc;
+}
+
+/* navbar */
+/* .navbar {
+    background: url(img/bg\ navbar\ 2.jpg);
+    background-size: cover;
+    background-position: 0 80em;
+    background-attachment: fixed;
+} */
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  color: gold !important;
+  /* !important disini kalau misal warna nya gamau jalan, dan biasanya keadaan ini ada di bootstrap */
+  font-family: "Viga", sans-serif;
+  font-size: 32px;
+}
+
+.tombol {
+  background-color: rgb(179, 255, 176);
+  border-radius: 20px;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(img/1.\ jumbot/jumbot.jpg);
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed;
+  /* kelihatannya saat di scroll */
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  text-transform: capitalize;
+  color: violet;
+  margin-top: 150px;
+  font-weight: 400;
+  font-weight: normal;
+  text-shadow: 0 0 10px rgb(255, 81, 0), 0 0 20px rgb(255, 81, 0), 0 0 30px rgb(255, 81, 0),
+    0 0 40px #008cff, 0 0 70px #008cff, 0 0 80px #008cff, 0 0 100px #008cff,
+    0 0 150px #008cff;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+span.jumbo {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px lightblue, 0 0 70px lightblue, 0 0 80px lightblue,
+    0 0 100px lightblue, 0 0 150px lightblue;
+}
+
+.tombol2 {
+  border-radius: 20px;
+}
+
+section {
+    min-height: 600px; /* Cara membuat tiap-tiap section nya yang memiliki ukuran minimal tingginya menggunakan peropert disamping */
+}
+
+/* pelengkap */
+.pelengkap {
+  background-color: #b8e994;
+}
+
+.pelengkap hr {
+  width: 10%;
+  border-top: 3px solid blue;
+  margin-top: -5px;
+}
+
+/* info1 */
+.info1 {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, .8);
+  border-radius: 15px;
+  margin-top: -110px;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.info1 img {
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info1 h4 {
+  margin-top: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info1 p {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: -8px;
+  font-weight: 200px;
+}
+
+/* info2 */
+.info2 {
+  /* padding-top: 20px; */
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+.teks-away {
+  border-radius: 10px;
+  background-image: url(img/bg\ teks\ jalan.jpg);
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(81, 125, 245);
+  text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #ff00de,
+    0 0 70px #ff00de,
+    0 0 80px #ff00de,
+    0 0 100px #ff00de,
+    0 0 150px #ff00de;
+}
+
+.info2 .introduction {
+  padding-top: 30px;
+}
+
+/* swiper dan about */
+.about {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #38ada9;
+}
+
+.about hr {
+  width: 10%;
+  border-top: 3px solid blue;
+  margin-top: -5px;
+}
+
+.swiper {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 3px 20px rgba(2, 4, 255, 1);
+  /* x of y of blur warna */
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.486);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.swiper-slide img.img2 {
+  padding: 15px;
+}
+
+.swiper-slide img.img1 {
+  width: 50%;
+  background-size: cover;
+  padding: 10px;
+}
+
+/* Content */
+.content {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #cd84f1;
+}
+
+.content hr {
+  width: 10%;
+  border-top: 3px solid blue;
+  margin-top: -5px;
+  margin-bottom: 50px;
+}
+
+.content .card {
+  min-height: 500px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.content .card img {
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.content .btn {
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* register */
+.register-body {
+  background-image: url(img/bg.jpg);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.register-body form{
+  box-shadow: 2px 6px 100px #ffffff;
+}
+
+/* Menu Login */
+.login-body {
+  padding: 0;
+  margin: 0;
+  background-image: url(img/bg3.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+  margin: auto;
+  max-height: fit-content;
+}
+
+.header {
+  background-image: url(img/bg2.jfif);
+  background-size: cover;
+  padding: 90px 30px;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.header p {
+  font-size: xx-small;
+}
+
+.header h1 {
+  font-family: 'Zen Dots', cursive;
+
+}
+
+.login-area {
+  text-align: center;
+  /* padding: 50px 50px 30px 50px; */
+  padding: 30px;
+}
+
+.email,
+.password,
+.captcha {
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 20px;
+    outline: blue;
+    border: none;
+    color: white;
+    background-color: rgba(55, 10, 114, .5);
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+.email::placeholder,
+.password::placeholder,
+.captcha::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.email:focus,
+.password:focus,
+.captcha:focus {
+    background-color: rgba(55, 10, 114, .7);
+}
+
+.submit, .cancel {
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(55, 10, 114, 1);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 10px;
+    transition: .2s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel {
+  background-color: red;
+}
+
+.submit:hover {
+    background-color: #1f0344;
+}
+
+.cancel:hover {
+  background-color: #a50c0c;
+}
+
+/* umum */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.text-gradient.text-info {
+  background-image: linear-gradient(310deg, #2152FF, #21D4FD);
+}
+
+.text-gradient.text-info {
+  background-image: linear-gradient(310deg, #2152FF, #21D4FD);
+}
+
+/* register */
+.register-body {
+  background-image: url(img/bg.jpg);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.register-body form{
+  box-shadow: 2px 6px 100px #ffffff;
+}
+
+/* contact */
+.contact {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #18dcff;
+}
+
+.contact hr {
+  width: 10%;
+  border-top: 3px solid blue;
+  margin-top: -5px;
+  margin-bottom: 50px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  bottom: 0;
+  /* Biar dia nempel di bawah liat pada css layouting di position*/
+  width: 100%;
+  /* Lebar */
+  height: 120px;
+  /* Tinggi */
+  background-color: #333;
+  padding: 25px;
+  /* margin-top: 30px; */
+}
+
+footer p {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+footer p a.profile {
+  text-decoration: none;
+}
+
+footer img {
+  width: 16px;
+  height: 16px;
+  fill: yellow;
+  padding-bottom: 3px;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+
+  /* navbar */
+  .nav-link {
+    text-transform: uppercase;
+    color: rgb(210, 26, 235) !important;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover {
+    background-color: orange;
+    border-radius: 15px;
+    transition: 2s;
+    color: aliceblue !important;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid blue;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    padding-bottom: -8px;
+  }
+
+  /* jumbotron */
+  .jumbotron {
+    margin-top: -90px;
+    height: 600px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 70px;
+  }
+
+  /* swiper */
+  .swiper-slide img.img1 {
+    width: 50%;
+    background-size: cover;
+    padding: 20px 40px;
+  }
+
+  .swiper-slide img.img2 {
+    padding: 40px;
+  }
+}
